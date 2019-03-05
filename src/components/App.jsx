@@ -7,16 +7,16 @@ var App = () => (
   <div>
     <nav className="navbar">
       <div className="col-md-6 offset-md-3">
-        <div><h5><em>search</em> view goes here</h5></div>
+        <div><h5><em>search</em> <Search videos={exampleVideoData} /></h5></div>
       </div>
     </nav>
     <div className="row">
       <div className="col-md-7">
-        <VideoPlayer videos={exampleVideoData} />
+        <div><h5><em>videoPlayer</em><VideoPlayer videos={exampleVideoData} /></h5></div>
       </div>
       <div className="col-md-5">
-        <VideoList videos={exampleVideoData} />
-      </div>ß
+        <div><h5><em>videoList</em><VideoList videos={exampleVideoData} /></h5></div>
+      </div>
     </div>
   </div>
 );
