@@ -1,5 +1,5 @@
 var VideoListEntry = (props) => (
-  <div className="video-list-entry media">
+  <div className="video-list-entry media" onClick={function() { props.click(props.video); }}>
     <div className="media-left media-middle">
       <img className="media-object" src={props.video.snippet.thumbnails.default.url} alt="" />
     </div>
@@ -9,7 +9,6 @@ var VideoListEntry = (props) => (
     </div>
   </div>
 );
-
 // PropTypes tell other developers what `props` a component expects
 // Warnings will be shown in the console when the defined rules are violated
 VideoListEntry.propTypes = {
